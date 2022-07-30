@@ -32,6 +32,6 @@ mongoose
   .catch((err) => {
     console.log("Database Connection is failed", err);
   });
-app.listen(4000, () => {
+app.listen(process.env.PORT, () => {
   console.log("server running");
 });
